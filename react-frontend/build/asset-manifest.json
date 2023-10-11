@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-ecommerce/static/css/main.9b3861e2.css",
+    "main.js": "/react-ecommerce/static/js/main.9562c645.js",
+    "static/js/787.28cb0dcd.chunk.js": "/react-ecommerce/static/js/787.28cb0dcd.chunk.js",
+    "static/media/loading-svgrepo-com.svg": "/react-ecommerce/static/media/loading-svgrepo-com.6f63f278e2487196ba592a9627598a09.svg",
+    "static/media/material-combed-cotton.svg": "/react-ecommerce/static/media/material-combed-cotton.289e29f089e9ce4e52cd0a83ec480116.svg",
+    "static/media/logo-hs.svg": "/react-ecommerce/static/media/logo-hs.0ece457f836f3f826374ed0d48df40c9.svg",
+    "static/media/feature-reinforced-heel-and-toe.svg": "/react-ecommerce/static/media/feature-reinforced-heel-and-toe.7683ec0b72cf395ea39624d8c62c04ae.svg",
+    "static/media/blue-smile.svg": "/react-ecommerce/static/media/blue-smile.936e2008aeb02a78b4ed1387ca7bb5d4.svg",
+    "static/media/light-blue-smile.svg": "/react-ecommerce/static/media/light-blue-smile.62a3a2d46451ad55e3094475c8965e12.svg",
+    "static/media/pink-icon.svg": "/react-ecommerce/static/media/pink-icon.503888d7efcc740e1482cb57163cf3f8.svg",
+    "index.html": "/react-ecommerce/index.html",
+    "static/media/cart.svg": "/react-ecommerce/static/media/cart.4a67e9c6895f5abe59f18022b5603927.svg",
+    "main.9b3861e2.css.map": "/react-ecommerce/static/css/main.9b3861e2.css.map",
+    "main.9562c645.js.map": "/react-ecommerce/static/js/main.9562c645.js.map",
+    "787.28cb0dcd.chunk.js.map": "/react-ecommerce/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b3861e2.css",
+    "static/js/main.9562c645.js"
+  ]
+}
