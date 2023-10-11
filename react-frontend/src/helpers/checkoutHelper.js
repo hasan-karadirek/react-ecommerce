@@ -37,6 +37,7 @@ export function checkout(formData, errorHandler) {
   };
   fetchApi(fetchUrl, options)
     .then((res) => {
+      console.log(res);
       setCookie("orderInProcess", JSON.stringify(res.order));
       deleteCookie("order");
 

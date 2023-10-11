@@ -25,38 +25,45 @@ export default function ProductList({
     button.classList.add("hidden");
   };
 
-  const productList = products.products.map((product) => {
-    return (
-      <li
-        key={product.id}
-        className="product-card-container"
-        onMouseEnter={(e) => mouseEnter(e)}
-        onMouseLeave={(e) => mouseLeave(e)}
-      >
-        <Link className="product-link" to={`/product/${product.slug}`}>
-          <img
-            className="product-card-image"
-            src={`${apiServer}/api/productImages/${
-              product.ProductImages[0].path.split("/")[3]
-            }`}
-            alt={product.slug}
-          />
-          <span className="product-cart-title">{product.name}</span>
-          <span className="product-card-price">{product.price}$</span>
-        </Link>
-        <button
-          key={product.id}
-          id={product.id}
-          onClick={(e) => {
-            updateCart(e.target.id, handleOrderContext, "add", errorHandler);
-          }}
-          className="product-card-add-to-cart hidden"
-        >
-          <img id={product.id} alt="cart-icon" src={cartIcon} />
-        </button>
-      </li>
-    );
-  });
+  const productList = products.products
+    ? products.products.map((product) => {
+        return (
+          <li
+            key={product.id}
+            className="product-card-container"
+            onMouseEnter={(e) => mouseEnter(e)}
+            onMouseLeave={(e) => mouseLeave(e)}
+          >
+            <Link className="product-link" to={`/product/${product.slug}`}>
+              <img
+                className="product-card-image"
+                src={`${apiServer}/api/productImages/${
+                  product.ProductImages[0].path.split("/")[3]
+                }`}
+                alt={product.slug}
+              />
+              <span className="product-cart-title">{product.name}</span>
+              <span className="product-card-price">{product.price}$</span>
+            </Link>
+            <button
+              key={product.id}
+              id={product.id}
+              onClick={(e) => {
+                updateCart(
+                  e.target.id,
+                  handleOrderContext,
+                  "add",
+                  errorHandler
+                );
+              }}
+              className="product-card-add-to-cart hidden"
+            >
+              <img id={product.id} alt="cart-icon" src={cartIcon} />
+            </button>
+          </li>
+        );
+      })
+    : [];
   return (
     <>
       {loading ? (
